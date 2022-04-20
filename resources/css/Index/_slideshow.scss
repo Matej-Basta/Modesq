@@ -1,0 +1,33 @@
+@import "~bootstrap/scss/bootstrap";
+
+.carousel__item {
+    background-color: black;
+    height: 85vh;
+
+    &__overlay {
+        background-position: center;
+        background-size: cover;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0; 
+        top: 0;
+        opacity: 0.8;
+
+        &--1 {
+            background-image: url("/img/slide-1.jpg");
+        }
+
+        &--2 {
+            background-image: url("/img/slide-2.jpg");
+        }
+
+        &--3 {
+            background-image: url("/img/slide-3.jpg");
+        }
+    }
+
+    &__caption {
+        background-color: lightblue;
+    }
+}
