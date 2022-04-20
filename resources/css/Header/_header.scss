@@ -1,0 +1,40 @@
+.header {
+    align-items: center;
+    display: flex;
+    height: 7vh;
+    margin: auto;
+    width: 90%;
+
+    &__nav {
+        display: flex;
+        flex: 1;
+        font-weight: 600;
+        font-size: 1rem;
+        gap: 2rem;
+        justify-content: left;
+    }
+    
+    &__logo {
+        align-items: center;
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        height: 100%;
+
+        &__pic {
+            display: block;
+            height: 60%;
+        }
+    }
+
+    &__icon {
+        align-items: center;
+        display: flex;
+        flex: 1;
+        justify-content: right;
+
+        &__pic {
+            font-size: 1.2rem;
+        }
+    }
+}
