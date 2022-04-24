@@ -10,11 +10,16 @@
 
         &__top {
             background-color: #ededed;
-            background-image: url("/img/singapur.jpg");
-            background-position: right;
-            background-repeat: no-repeat;
-            background-size: contain;
             flex: 1;
+            overflow: hidden;
+            position: relative;
+
+            &__image {
+                display: block;
+                position: absolute;
+                right: 0;
+                width: 70%;
+            }
         }
 
         &__bottom {
@@ -22,13 +27,31 @@
             flex: 1;
 
             &__left {
-                background-color: green;
+                background-color: white;
                 flex: 1;
+                overflow: hidden;
+                position: relative;
+
+                &__image {
+                    display: block;
+                    position: absolute;
+                    top: 3%;
+                    width: 100%;
+                }
             }
 
             &__right {
-                background-color: red;
+                background-color: #ededed;
                 flex: 1;
+                overflow: hidden;
+                position: relative;
+
+                &__image {
+                    display: block;
+                    position: absolute;
+                    top: 9%;
+                    width: 153%;
+                }
             }
         }
     }
@@ -36,17 +59,20 @@
     &__right {
         background-color: #e9eaec;
         flex: 1;
+        overflow: hidden;
 
         &__image {
             display: block;
-            height: 100%;
             margin: auto;
+            width: 80%;
         }
     }
 
     &__text {
         margin: 1rem;
+        position: absolute;
         width: 18rem;
+        z-index: 1;
 
         &__category {
             color: rgb(18, 168, 18);
