@@ -9,7 +9,11 @@
         flex-direction: column;
 
         &__top {
-            background-color: pink;
+            background-color: #ededed;
+            background-image: url("/img/singapur.jpg");
+            background-position: right;
+            background-repeat: no-repeat;
+            background-size: contain;
             flex: 1;
         }
 
@@ -30,10 +34,14 @@
     }
 
     &__right {
-        background-image: url("/img/sada_kvetinacu.jpg");
-        background-position: top;
-        background-size: cover;
-        flex: 1
+        background-color: #e9eaec;
+        flex: 1;
+
+        &__image {
+            display: block;
+            height: 100%;
+            margin: auto;
+        }
     }
 
     &__text {

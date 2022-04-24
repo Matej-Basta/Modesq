@@ -7,7 +7,7 @@ export default function Products() {
                 <div className="products__left__top">
                     <div className="products__text">
                         <p className="products__text__category">TOP PRODUKT</p>
-                        <h3 className="products__text__name">Stolek Oslo</h3>
+                        <h3 className="products__text__name">Stůl Singapur</h3>
                         <p className="products__text__description">Konferenční stolek v zajímavém eklektickém stylu se hodí do každého moderního interiéru.</p>
                     </div>
                 </div>
@@ -23,7 +23,7 @@ export default function Products() {
                     <div className="products__left__bottom__right">
                         <div className="products__text">
                             <p className="products__text__category">NOVÝ DESIGN</p>
-                            <h3 className="products__text__name">Jídelní stůl Kjóto Box</h3>
+                            <h3 className="products__text__name">Jídelní stůl Kjóto</h3>
                             <p className="products__text__description">Tradiční tvar stolu Kjóto byl inspirován japonským designem.</p>
                         </div>
                     </div>
@@ -31,6 +31,7 @@ export default function Products() {
             </div>
 
             <div className="products__right">
+                <img className="products__right__image" alt="sada_betonových_květináčů" src="/img/sada_kvetinacu.jpg" />
                 <div className="products__text">
                     <p className="products__text__category">KOLEKCE</p>
                     <h3 className="products__text__name">Kolekce Box</h3>
