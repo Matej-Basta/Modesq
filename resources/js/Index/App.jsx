@@ -5,6 +5,7 @@ import Slideshow from "./Slideshow";
 import Products from "./Products";
 import Blog from "./Blog";
 import About from "./About";
+import Footer from "../Components/Footer";
 
 export default function App() {
     return (
@@ -14,7 +15,7 @@ export default function App() {
         <Products />
         <Blog />
         <About />
-        <h1>This is the App component</h1>
+        <Footer />
         </>
     )
 }
