@@ -1,5 +1,50 @@
 .footer {
+    align-items: center;
     background-color: black;
+    color: white;
+    display: flex;
     height: 45vh;
+    padding: 2rem;
     width: 100%;
+
+    &__container-of-parts {
+        border-left: gray solid 3px;
+        width: 20%;
+    }
+    
+    &__parts {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        
+        &__part {
+
+            margin-left: 3rem;
+
+            &__heading {
+                font-weight: 600;
+            }
+            
+            &__icon-container {
+                display: flex;
+                justify-content: space-between;
+
+                &__icon {
+                    color: rgb(18, 168, 18);
+                    font-size: 2rem;
+                }
+            }
+
+            &__list {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+
+                &__item {
+                    display: flex;
+                    gap: 1rem;
+                }
+            }
+        }
+    }
 }
