@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Model\Category;
 use App\Model\Size;
+use App\Model\Color;
 
 class Product extends Model
 {
@@ -19,5 +20,10 @@ class Product extends Model
     public function sizes()
     {
         return $this->hasMany(Size::class);
+    }
+
+    public function colors()
+    {
+        return $this->belongsToMany(Color::class);
     }
 }
