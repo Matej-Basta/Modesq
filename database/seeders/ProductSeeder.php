@@ -40,11 +40,6 @@ class ProductSeeder extends Seeder
                 "category_id" => 1,
             ],
             [
-                "name" => "Paříž (dřevo)",
-                "description" => "Jídelní stůl Paříž je inspirovaný hlavní dominantou města, Eiffelovou věží. Stejně jako věž, tak i podnoží tohoto stolu se sbíhá směrem k vrcholu. Monumentální vhled stolu dovytváří betonová deska vyrobená z kvalitního UHPC betonu ošetřeného několika vrstvami speciálních povrchových úprav, které mají certifikát nezávadnosti pro styk s potravinami. Jedná se o český, ručně vyrobený nábytek z betonu.",
-                "category_id" => 1,
-            ],
-            [
                 "name" => "Bauhaus",
                 "description" => "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam odit ad facere fuga nesciunt fugiat ut, a quam quibusdam quasi consequatur animi voluptatibus vitae reprehenderit tempora, ducimus esse cupiditate! Incidunt eius non vero quaerat nihil consequuntur minus explicabo eveniet reprehenderit. Dolore reiciendis fugit illo aliquid eveniet! Amet exercitationem voluptates aperiam non quo?",
                 "category_id" => 2,
