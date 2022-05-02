@@ -19,6 +19,10 @@ class ProductController extends Controller
         
         $product = Product::findOrFail($product_id);
 
+        $product->category;
+        $product->sizes = $product->sizes()->orderBy("size", "asc")->get();
+        $product->colors;
+
         return $product;
     }
 
@@ -32,6 +36,12 @@ class ProductController extends Controller
      public function products($category_id) {
 
          $products = Product::query()->where("category_id", $category_id)->get();
+
+        //  foreach($products as $product) {
+        //      $product->category;
+        //      $product->sizes = $product->sizes()->orderBy("size", "asc")->get();
+        //      $product->colors;
+        //  }
 
          return $products;
      }

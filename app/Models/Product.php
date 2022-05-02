@@ -4,9 +4,9 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use App\Model\Category;
-use App\Model\Size;
-use App\Model\Color;
+use App\Models\Category;
+use App\Models\Size;
+use App\Models\Color;
 
 class Product extends Model
 {
