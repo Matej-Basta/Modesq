@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Product;
+use App\Models\Category;
 
 class ProductController extends Controller
 {
@@ -34,8 +35,8 @@ class ProductController extends Controller
      */
 
      public function products($category_id) {
-
-         $products = Product::query()->where("category_id", $category_id)->get();
+        
+        $products = Product::query()->where("category_id", $category_id)->get();
 
         //  foreach($products as $product) {
         //      $product->category;
