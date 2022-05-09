@@ -4,6 +4,7 @@ import axios from "axios";
 //custom components
 import Header from "../Components/Header";
 import Tables from "./Tables";
+import CoffeeTables from "./CoffeeTables";
 import About from "../Components/About";
 import Footer from "../Components/Footer";
 
@@ -49,7 +50,7 @@ export default function App() {
                 <Routes>
 
                     <Route exact path="/obchod/stoly" element={<Tables products={products}/>} />
-                    <Route exact path="/obchod/stolky" element={<></>} />
+                    <Route exact path="/obchod/stolky" element={<CoffeeTables products={products}/>} />
 
                 </Routes>
 
