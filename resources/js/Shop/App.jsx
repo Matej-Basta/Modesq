@@ -4,6 +4,8 @@ import axios from "axios";
 //custom components
 import Header from "../Components/Header";
 import Tables from "./Tables";
+import About from "../Components/About";
+import Footer from "../Components/Footer";
 
 export default function App() {
 
@@ -52,6 +54,10 @@ export default function App() {
                 </Routes>
 
             </BrowserRouter>
+
+            <About />
+
+            <Footer />
         </>
 
     );

@@ -1,6 +1,6 @@
 import React from "react";
 //custom components
-import InfoButton from "./InfoButton";
+import InfoButton from "../Components/InfoButton";
 
 export default function Post({src, alt}) {
     return (
