@@ -18,6 +18,7 @@ return new class extends Migration
             $table->foreignId("category_id");
             $table->string("name");
             $table->text("description");
+            $table->string("picture");
             $table->timestamps();
         });
     }

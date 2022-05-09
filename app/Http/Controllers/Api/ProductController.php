@@ -38,11 +38,9 @@ class ProductController extends Controller
         
         $products = Product::query()->where("category_id", $category_id)->get();
 
-        //  foreach($products as $product) {
-        //      $product->category;
-        //      $product->sizes = $product->sizes()->orderBy("size", "asc")->get();
-        //      $product->colors;
-        //  }
+         foreach($products as $product) {
+             $product->price = $product->sizes()->orderBy("price", "asc")->value("price");
+         }
 
          return $products;
      }
