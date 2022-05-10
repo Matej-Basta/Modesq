@@ -2,8 +2,7 @@ import React, {useState, useEffect} from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 //custom components
 import Header from "../Components/Header";
-import Tables from "./Tables";
-import ProductPage from "../Components/ProductPage";
+import CoffeeTables from "./CoffeeTables";
 import About from "../Components/About";
 import Footer from "../Components/Footer";
 //custom functions
@@ -24,10 +23,11 @@ export default function App() {
             <BrowserRouter>
 
                 <Routes>
-                    <Route exact path="/obchod/stoly" element={<Tables products={products}/>} />
-                    <Route path="/obchod/stoly/:product" element={<ProductPage />} />
+
+                    <Route exact path="/obchod/stolky" element={<CoffeeTables products={products}/>} />
+
                 </Routes>
-                
+
             </BrowserRouter>
 
             <About />

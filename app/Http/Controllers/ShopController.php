@@ -9,18 +9,17 @@ class ShopController extends Controller
 {
     
 
-    public function tables()
+    public function tables($product = null)
     {
-        
-        $category_id = 1;
         $category = "stoly";
 
-        $products = Product::query()->where("category_id", $category_id)->get();
+        return view("shop.tables", compact("category"));
+    }
 
-        foreach($products as $product) {
-            $product->price = $product->sizes()->orderBy("price", "asc")->value("price");
-        }
+    public function coffee_tables($product = null)
+    {
+        $category = "konferenční stolky";
 
-        return view("shop.tables", compact("products", "category"));
+        return view("shop.coffee_tables", compact("category"));
     }
 }

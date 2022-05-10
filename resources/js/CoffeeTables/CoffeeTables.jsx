@@ -1,6 +1,6 @@
 import React from "react";
 //custom components
-import ProductList from "./ProductList";
+import ProductList from "../Components/ProductList";
 
 export default function CoffeeTables({products}) {
     return (
