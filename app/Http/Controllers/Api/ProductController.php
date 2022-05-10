@@ -27,21 +27,21 @@ class ProductController extends Controller
         return $product;
     }
 
-    /**
-     * function that fetches a specific product based on its category
-     * 
-     * @param $category_id
-     * @return array of objects
-     */
+    // /**
+    //  * function that fetches a specific product based on its category
+    //  * 
+    //  * @param $category_id
+    //  * @return array of objects
+    //  */
 
-     public function products($category_id) {
+    //  public function products($category_id) {
         
-        $products = Product::query()->where("category_id", $category_id)->get();
+    //     $products = Product::query()->where("category_id", $category_id)->get();
 
-         foreach($products as $product) {
-             $product->price = $product->sizes()->orderBy("price", "asc")->value("price");
-         }
+    //      foreach($products as $product) {
+    //          $product->price = $product->sizes()->orderBy("price", "asc")->value("price");
+    //      }
 
-         return $products;
-     }
+    //      return $products;
+    //  }
 }

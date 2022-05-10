@@ -15,5 +15,13 @@ use Illuminate\Support\Facades\Route;
 
 Route::get("/", "IndexController@index");
 
+Route::get("/obchod/stoly", "ShopController@tables");
+
+Route::get("/obchod/stolky", "ShopController@coffeTables");
+
+// Route::get("/obchod/kvetinace", "ShopController@flowerpots");
+
+// Route::get("/obchod/doplnky", "ShopConroller@accessories");
+
 Route::get("/obchod/{category}/{product?}", "ShopController@shop");
 
