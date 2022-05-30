@@ -13,6 +13,8 @@ export default function ProductPage() {
     }, [])
 
     return (
-        "lala"
+        product ?
+        <h2>{product.name}</h2> :
+        null
     );
 }
