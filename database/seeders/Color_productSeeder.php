@@ -22,135 +22,97 @@ class Color_productSeeder extends Seeder
             [
                 "color_id" => 1,
                 "product_id" => 1,
-                "picture" => "/img/paris.jpg",
-                "picture2" => "/img/berlin.jpg",
-                "picture3" => "/img/paris2.jpg",
+                 
             ],
             [
                 "color_id" => 2,
                 "product_id" => 1,
-                "picture" => "/img/paris.jpg",
-                "picture2" => "/img/berlin.jpg",
-                "picture3" => "/img/paris2.jpg",
+                 
             ],
             [
                 "color_id" => 3,
                 "product_id" => 1,
-                "picture" => "/img/paris.jpg",
-                "picture2" => "/img/berlin.jpg",
-                "picture3" => "/img/paris2.jpg",
+                 
             ],
             [
                 "color_id" => 1,
                 "product_id" => 2,
-                "picture" => "/img/paris.jpg",
-                "picture2" => "/img/berlin.jpg",
-                "picture3" => "/img/paris2.jpg",
+                 
             ],
             [
                 "color_id" => 2,
                 "product_id" => 2,
-                "picture" => "/img/paris.jpg",
-                "picture2" => "/img/berlin.jpg",
-                "picture3" => "/img/paris2.jpg",
+                 
             ],
             [
                 "color_id" => 3,
                 "product_id" => 2,
-                "picture" => "/img/paris.jpg",
-                "picture2" => "/img/berlin.jpg",
-                "picture3" => "/img/paris2.jpg",
+                 
             ],
             [
                 "color_id" => 1,
                 "product_id" => 3,
-                "picture" => "/img/paris.jpg",
-                "picture2" => "/img/berlin.jpg",
-                "picture3" => "/img/paris2.jpg",
+                 
             ],
             [
                 "color_id" => 2,
                 "product_id" => 3,
-                "picture" => "/img/paris.jpg",
-                "picture2" => "/img/berlin.jpg",
-                "picture3" => "/img/paris2.jpg",
+                 
             ],
             [
                 "color_id" => 3,
                 "product_id" => 3,
-                "picture" => "/img/paris.jpg",
-                "picture2" => "/img/berlin.jpg",
-                "picture3" => "/img/paris2.jpg",
+                 
             ],
             [
                 "color_id" => 1,
                 "product_id" => 4,
-                "picture" => "/img/paris.jpg",
-                "picture2" => "/img/berlin.jpg",
-                "picture3" => "/img/paris2.jpg",
+                 
             ],
             [
                 "color_id" => 2,
                 "product_id" => 4,
-                "picture" => "/img/paris.jpg",
-                "picture2" => "/img/berlin.jpg",
-                "picture3" => "/img/paris2.jpg",
+                 
             ],
             [
                 "color_id" => 3,
                 "product_id" => 4,
-                "picture" => "/img/paris.jpg",
-                "picture2" => "/img/berlin.jpg",
-                "picture3" => "/img/paris2.jpg",
+                 
             ],
             [
                 "color_id" => 1,
                 "product_id" => 5,
-                "picture" => "/img/paris.jpg",
-                "picture2" => "/img/berlin.jpg",
-                "picture3" => "/img/paris2.jpg",
+                 
             ],
             [
                 "color_id" => 3,
                 "product_id" => 5,
-                "picture" => "/img/paris.jpg",
-                "picture2" => "/img/berlin.jpg",
-                "picture3" => "/img/paris2.jpg",
+                 
             ],
             [
                 "color_id" => 1,
                 "product_id" => 6,
-                "picture" => "/img/paris.jpg",
-                "picture2" => "/img/berlin.jpg",
-                "picture3" => "/img/paris2.jpg",
+                 
             ],
             [
                 "color_id" => 2,
                 "product_id" => 6,
-                "picture" => "/img/paris.jpg",
-                "picture2" => "/img/berlin.jpg",
-                "picture3" => "/img/paris2.jpg",
+                 
             ],
             [
                 "color_id" => 1,
                 "product_id" => 7,
-                "picture" => "/img/paris.jpg",
-                "picture2" => "/img/berlin.jpg",
-                "picture3" => "/img/paris2.jpg",
+                 
             ],
             [
                 "color_id" => 2,
                 "product_id" => 7,
-                "picture" => "/img/paris.jpg",
-                "picture2" => "/img/berlin.jpg",
-                "picture3" => "/img/paris2.jpg",
+                 
             ],
             [
                 "color_id" => 3,
                 "product_id" => 7,
-                "picture" => "/img/paris.jpg",
-                "picture2" => "/img/berlin.jpg",
-                "picture3" => "/img/paris2.jpg",
+                 
             ],
         ];
 
@@ -158,9 +120,7 @@ class Color_productSeeder extends Seeder
             Color_product::create([
                 "color_id" => $color_product["color_id"],
                 "product_id" => $color_product["product_id"],
-                "picture" => $color_product["picture"],
-                "picture2" => $color_product["picture2"],
-                "picture3" => $color_product["picture3"],
+                
             ]);
         }
     }
