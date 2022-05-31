@@ -17,6 +17,9 @@ return new class extends Migration
             $table->id();
             $table->foreignId("color_id");
             $table->foreignId("product_id");
+            $table->string("picture");
+            $table->string("picture2");
+            $table->string("picture3");
             $table->timestamps();
         });
     }

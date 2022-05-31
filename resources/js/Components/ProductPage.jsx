@@ -2,6 +2,7 @@ import React from "react";
 import {useState, useEffect} from "react";
 //custom functions
 import { fetchProduct } from "../Functions/fetchingFunctions";
+import ProductDetails from "./ProductDetails";
 
 export default function ProductPage() {
     
@@ -14,7 +15,7 @@ export default function ProductPage() {
 
     return (
         product ?
-        <h2>{product.name}</h2> :
+        <ProductDetails product={product} /> :
         null
     );
 }
